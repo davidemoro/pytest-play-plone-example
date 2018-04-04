@@ -10,7 +10,7 @@ How to run the tests::
 
   $ virtualenv --no-site-packages --python $(which python3.6) python
   $ source python/bin/activate
-  $ pip install -r requirements.txt
+  $ pip install -r https://raw.githubusercontent.com/tierratelematics/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
   $ pytest --variables env-ALPHA.yml --splinter-webdriver firefox --splinter-screenshot-dir /tmp -x
 
 See:
