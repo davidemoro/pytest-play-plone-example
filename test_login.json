@@ -1,0 +1,51 @@
+{
+    "steps": [
+        {
+            "comment": "visit base url",
+            "type": "get",
+            "url": "$base_url"
+        },
+        {
+            "comment": "click on login link",
+            "locator": {
+                "type": "id",
+                "value": "personaltools-login"
+            },
+            "type": "clickElement"
+        },
+        {
+            "comment": "provide a username",
+            "locator": {
+                "type": "id",
+                "value": "__ac_name"
+            },
+            "text": "$username",
+            "type": "setElementText"
+        },
+        {
+            "comment": "provide a password",
+            "locator": {
+                "type": "id",
+                "value": "__ac_password"
+            },
+            "text": "$password",
+            "type": "setElementText"
+        },
+        {
+            "comment": "click on login submit button",
+            "locator": {
+                "type": "css",
+                "value": ".pattern-modal-buttons > input[name=submit]"
+            },
+            "type": "clickElement"
+        },
+        {
+            "comment": "wait for page loaded",
+            "locator": {
+                "type": "css",
+                "value": ".icon-user"
+            },
+            "type": "waitForElementVisible"
+        }
+    ]
+}
