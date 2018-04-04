@@ -18,3 +18,8 @@ See:
 * https://github.com/tierratelematics/pytest-play/pull/51
 * https://www.plone-demo.info
 * https://www.plone.org
+
+``pytest-play`` is shipped by default by a more opinionated cookiecutter scaffolding tool with many options (selenium grid ready,
+Jenkins integration, etc). Have a look at:
+
+* https://github.com/tierratelematics/cookiecutter-qa
