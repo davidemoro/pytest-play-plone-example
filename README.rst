@@ -10,16 +10,15 @@ How to run the tests::
 
   $ virtualenv --no-site-packages --python $(which python3.6) python
   $ source python/bin/activate
-  $ pip install -r https://raw.githubusercontent.com/tierratelematics/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
+  $ pip install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
   $ pytest --variables env-ALPHA.yml --splinter-webdriver firefox --splinter-screenshot-dir /tmp -x
 
 See:
 
-* https://github.com/tierratelematics/pytest-play/pull/51
 * https://www.plone-demo.info
 * https://www.plone.org
 
 ``pytest-play`` is shipped by default by a more opinionated cookiecutter scaffolding tool with many options (selenium grid ready,
 Jenkins integration, etc). Have a look at:
 
-* https://github.com/tierratelematics/cookiecutter-qa
+* https://github.com/davidemoro/cookiecutter-qa
