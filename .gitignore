@@ -1,3 +1,4 @@
 geckodriver.log
 python/
 .pytest_cache/
+[0-9]*
