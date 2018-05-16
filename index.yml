@@ -1,0 +1,18 @@
+execution:
+- executor: pytest
+  scenario: pytest-run
+  iterations: 1
+  files:
+  - env-ALPHA.yml
+  - scripts/test_login.ini
+  - scripts/test_login.json
+
+scenarios:
+  pytest-run:
+    additional-args: --variables env-ALPHA.yml --splinter-webdriver=firefox  --splinter-make-screenshot-on-failure=false --splinter-session-scoped-browser=false
+    script: scripts/
+
+services:
+- module: shellexec
+  prepare:
+  - pip3 install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
