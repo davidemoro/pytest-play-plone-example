@@ -13,6 +13,8 @@ How to run the tests::
   $ pip install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
   $ pytest --variables env-ALPHA.yml --splinter-webdriver firefox --splinter-screenshot-dir /tmp -x
 
+In addition a bzt/Taurus ``index.yml`` file is provided too (suitable for a BlazeMeter cloud run with ``bzt index.yml``).
+
 See:
 
 * https://www.plone-demo.info
