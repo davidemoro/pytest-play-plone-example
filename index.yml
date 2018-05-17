@@ -9,7 +9,7 @@ execution:
 
 scenarios:
   pytest-run:
-    additional-args: --variables env-ALPHA.yml --splinter-webdriver=firefox  --splinter-make-screenshot-on-failure=false --splinter-session-scoped-browser=false
+    additional-args: --variables env-ALPHA.yml --splinter-webdriver=firefox --splinter-make-screenshot-on-failure=false --splinter-session-scoped-browser=false
     script: scripts/
 
 services:
