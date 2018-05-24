@@ -4,8 +4,8 @@ execution:
   iterations: 1
   files:
   - env-ALPHA.yml
-  - scripts/test_login.ini
-  - scripts/test_login.json
+  - requirements.txt
+  - scripts.tar.gz
 
 scenarios:
   pytest-run:
@@ -15,4 +15,5 @@ scenarios:
 services:
 - module: shellexec
   prepare:
+  - tar xvzf scripts.tar.gz
   - pip3 install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
