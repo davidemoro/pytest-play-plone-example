@@ -1,4 +1,14 @@
 ---
+markers:
+  - login
+test_data:
+  - username: siteadmin
+    password: siteadmin
+  - username: editor
+    password: editor
+  - username: reader
+    password: reader
+---
 - comment: visit base url
   type: get
   url: "$base_url"
