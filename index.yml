@@ -16,4 +16,4 @@ services:
 - module: shellexec
   prepare:
   - tar xvzf scripts.tar.gz
-  - pip3 install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/master/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
+  - pip3 install -r https://raw.githubusercontent.com/davidemoro/cookiecutter-qa/yaml/%7B%7Bcookiecutter.project_slug%7D%7D/requirements.txt
